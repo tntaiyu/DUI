@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dui_resource>
+	<color_set>
+		<color name="blue" value="#0000FF"/>
+		<color name="green" value="#00FF00"/>
+		<color name="red" value="#FF0000"/>
+		<color name="white" value="#FFFFFFFF"/>
+		<color name="black" value="#FF000000"/>
+		<color name="yellow" value="#FFFF00"/>
+		<color name="mask_color" value="#FF00FF"/>
+		<color name="alpha_red" value="#88FF0000"/>
+		<color name="alpha_blue" value="#880000FF"/>
+	</color_set>
+	<cursor_set>
+		<cursor name="black_hand" config_type="file" file_name="./res/image/arrow.cur"/>
+	</cursor_set>
+	<font_set>
+		<font name="font_normal" italic="false" underline="false" facename="ids_fontname" height="-15" weight="800" strikeout="false"/>
+		<font name="font_link" italic="true" underline="true" facename="#tahoma" height="-12" weight="500" strikeout="false"/>
+	</font_set>
+	<image_set>
+		<image name="left_border" config_type="file" file_name="./res/image/border_left.bmp" count="2" mask_color="#FF00FF"/>
+		<image name="right_border" config_type="file" file_name="./res/image/border_right.bmp" count="2" mask_color="#FF00FF"/>
+		<image name="top_border" config_type="file" file_name="./res/image/border_top.bmp" count="2" mask_color="#FF00FF"/>
+		<image name="bottom_border" config_type="file" file_name="./res/image/border_bot.bmp" count="2" mask_color="#FF00FF"/>
+		<image name="left_border_alpha" config_type="file" file_name="./res/image/alpha_left.png" count="2" alpha="255"/>
+		<image name="right_border_alpha" config_type="file" file_name="./res/image/alpha_right.png" count="2" alpha="255"/>
+		<image name="top_border_alpha" config_type="file" file_name="./res/image/alpha_top.png" count="2" alpha="255"/>
+		<image name="bottom_border_alpha" config_type="file" file_name="./res/image/alpha_bottom.png" count="2" alpha="255"/>
+		<image name="chat" config_type="file" file_name="./res/image/chat.png" count="1" alpha="255"/>
+		<image name="baby" config_type="file" file_name="./res/image/baby.png" count="1" alpha="255"/>
+		<image name="icon" config_type="file" file_name="./res/image/icon.jpeg" count="3" alpha="200"/>
+		<image name="btn_back" config_type="file" file_name="./res/image/btnBack.bmp" count="6" mask_color="mask_color"/>
+		<image name="btn_icon" config_type="file" file_name="./res/image/share_icon.bmp" count="6" mask_color="mask_color"/>
+		<image name="close" config_type="file" file_name="./res/image/close.bmp" count="6" mask_color="mask_color"/>
+		<image name="radio_unchecked" config_type="file" file_name="./res/image/unchecked_radio.bmp" count="6" mask_color="mask_color"/>
+		<image name="radio_checked" config_type="file" file_name="./res/image/checked_radio.bmp" count="6" mask_color="mask_color"/>
+		<image name="checkbox_unchecked" config_type="file" file_name="./res/image/unchecked_checkbox.bmp" count="6" mask_color="mask_color"/>
+		<image name="checkbox_checked" config_type="file" file_name="./res/image/checked_checkbox.bmp" count="6" mask_color="mask_color"/>
+		<image name="hor_line" config_type="file" file_name="./res/image/hor_line.bmp" count="1" mask_color="mask_color"/>
+		<image name="ver_line" config_type="file" file_name="./res/image/ver_line.bmp" count="1" mask_color="mask_color"/>
+		<image name="QQ_BK" config_type="file" file_name="./res/image/QQ_BK.jpeg" count="1"/>
+		<image name="QQ_ICON" config_type="file" file_name="./res/image/QQ_ICON.jpeg" count="1" alpha="100"/>
+		<image name="sb_bottom" config_type="file" file_name="./res/image/scroll_bottom.bmp" count="6"/>
+		<image name="sb_top" config_type="file" file_name="./res/image/scroll_top.bmp" count="6"/>
+		<image name="sb_thumb" config_type="file" file_name="./res/image/scroll_thum.bmp" count="3"/>
+		<image name="title_bk" config_type="file" file_name="./res/image/title_bk.PNG" count="2"/>
+		<image name="title_icon" config_type="file" file_name="./res/image/title_icon.PNG" count="2"/>
+		<image name="close_btn" config_type="file" file_name="./res/image/btn_sys_close.png" count="3"/>
+		<image name="min_btn" config_type="file" file_name="./res/image/btn_sys_minimize.png" count="6"/>
+		<image name="max_btn" config_type="file" file_name="./res/image/btn_sys_maximize.png" count="6"/>
+		<image name="restore_btn" config_type="file" file_name="./res/image/btn_sys_restore.png" count="6"/>
+		<image name="close_btn1" config_type="file" file_name="./res/image/btn_sys_close1.png" count="3"/>
+		<image name="min_btn1" config_type="file" file_name="./res/image/btn_sys_minimize1.png" count="6"/>
+		<image name="max_btn1" config_type="file" file_name="./res/image/btn_sys_maximize1.png" count="6"/>
+		<image name="restore_btn1" config_type="file" file_name="./res/image/btn_sys_restore1.png" count="6"/>
+		<image name="progress_bk" config_type="file" file_name="./res/image/progress_back.PNG" count="2"/>
+		<image name="track_bk" config_type="file" file_name="./res/image/track_bk.PNG" count="2" mask_color="mask_color"/>
+		<image name="track_thumb" config_type="file" file_name="./res/image/track_thumb.png" count="1" mask_color="mask_color"/>
+		<image name="track_thumb1" config_type="file" file_name="./res/image/track_thumb1.PNG" count="3" alpha="255"/>
+		<image name="normal_icon" config_type="file" file_name="./res/image/small_icon.PNG" count="1"/>
+		<image name="expand_icon" config_type="file" file_name="./res/image/big_icon.PNG" count="1" mask_color="mask_color"/>
+		<image name="fit" config_type="file" file_name="./res/image/fit.bmp" count="1" mask_color="mask_color"/>
+		<image name="edit_bk" config_type="file" file_name="./res/image/edit_bk.bmp" count="4"/>
+		<image name="menu_sep" config_type="file" file_name="./res/image/menu_sep.bmp" count="1" mask_color="mask_color"/>
+		<image name="menu_arrow" config_type="file" file_name="./res/image/menu_arrow.bmp" count="4" mask_color="mask_color"/>
+	</image_set>
+</dui_resource>

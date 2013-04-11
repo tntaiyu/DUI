@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dui_template>
+	<plugin_set>
+		<plugin name="fade_button" file_name="fade_button.dll" entry_function="NewInstance"/>
+	</plugin_set>
+	<text_style_set>
+		<text_style default="true" name="normal" font="font_bold" normal_color="black" select_color="white" disable_color="#FF333333" hover_color="black" format="DT_CENTER DT_SINGLELINE DT_END_ELLIPSIS DT_VCENTER"/>
+		<text_style name="center_text" font="font_normal" normal_color="blue" select_color="white" disable_color="#FF333333" hover_color="black" format="DT_CENTER DT_SINGLELINE DT_VCENTER"/>
+		<text_style name="left_text" font="font_normal" normal_color="blue" select_color="white" disable_color="#FF555555" hover_color="black" format="DT_LEFT DT_SINGLELINE DT_VCENTER"/>
+		<text_style name="multi_text" font="font_normal" normal_color="blue" select_color="white" disable_color="#FF333333" hover_color="black" format="DT_LEFT DT_WORDBREAK"/>
+		<text_style name="link_text" font="font_normal" normal_color="white" select_color="white" disable_color="#FF333333" hover_color="green" format="DT_LEFT DT_SINGLELINE DT_VCENTER"/>
+		<text_style name="big_text" font="font_big" normal_color="black" select_color="white" disable_color="#FF333333" hover_color="blue" format="DT_LEFT DT_SINGLELINE DT_VCENTER"/>
+	</text_style_set>
+	<frame_style_set>
+		<frame_style name="main_bk" back_color="#FFB5BCD8,#FFDAE0E5,#FF3A7EAD" back_vertical="true" back_sep="0.2" back_image="qq_bk" back_image_pos="right_top"/>
+		<frame_style name="skin1_bk" back_color="#AA0000FF,#AAFFFFFF,#FF0060B6" back_vertical="true" back_sep="250" back_image="skin1_bk" back_image_pos="left_top" border_rect="3,3,3,3" border_round="4,4" border_color="#11133E6E"/>
+		<frame_style name="skin2_bk" back_color="#AAFF00FF,#AAFFFFFF,#FF880088" back_vertical="true" back_sep="250" back_image="skin2_bk" back_image_pos="left_top" border_rect="3,3,3,3" border_round="4,4" border_color="#11670900"/>
+		<frame_style name="canvas1" back_color="#88778888"/>
+		<frame_style name="canvas2" back_color="#88AA88AA"/>
+		<frame_style name="canvas3" back_color="#88BB33BB"/>
+		<frame_style name="canvas4" back_color="#8833BB33"/>
+		<frame_style name="canvas_red" back_color="red"/>
+		<frame_style name="canvas_green" back_color="green"/>
+		<frame_style name="canvas_blue" back_color="blue"/>
+		<frame_style name="canvas_black" back_color="black"/>
+		<frame_style name="canvas_white" back_color="white"/>
+		<frame_style name="hover_list" back_color="#66DDDDDD,#66777777"/>
+		<frame_style name="hover_group" back_color="#22DDDDDD,#22777777"/>
+		<frame_style name="select_list" border_color="red" border_rect="1,1,1,1" back_color="#AAEEEEEE,#AA000000,#AAFF00FF" border_round="5,5" back_sep="0.6" back_vertical="true"/>
+		<frame_style name="comb_list_bk" back_color="#FFB5BCD8,#FFDAE0E5,#FF3A7EAD" back_vertical="false" back_sep="0.1" border_rect="2,2,2,2" border_color="#883355CC" border_round="3,3"/>
+		<frame_style name="comb_list_bk1" back_color="#44333333,#88DAE0E5,#FF3A7EAD" back_vertical="false" back_sep="0.3" border_image="fit" border_rect="5,5,5,5"/>
+		<frame_style name="menu_icon_bk" back_color="#FF336688"/>
+		<frame_style name="menu_icon_bk_blue" back_color="#FF0000FF"/>
+		<frame_style name="menu_icon_bk_xp" back_color="#FF0000FF" back_image="xp_logo" back_image_pos="left_bottom"/>
+		<frame_style name="menu_item_style" border_color="blue" border_rect="1,1,1,1" back_color="#AAEEEEEE,#AA000000,#AA0000CC" border_round="5,5" back_sep="0.8" back_vertical="true"/>
+	</frame_style_set>
+	<control_style_set>
+		<control_style name="vert_scrollbar" arrow_image1="sb_top" arrow_image2="sb_bottom" thumb_image="sb_thumb" back_color="alpha_blue"/>
+		<control_style name="horz_scrollbar" arrow_image1="sb_top" arrow_image2="sb_bottom" thumb_image="sb_thumb" back_color="alpha_blue"/>
+		<control_style name="def_tab_item" text_style="normal" height="24" back_image="btn_bk"/>
+		<control_style name="def_button" icon="face" margin="5,5,5,5" back_image="btn_bk" text="ids_button" tooltip="ids_button" text_style="center_text"/>
+		<control_style name="checkbox_style" checked_image="checked_checkbox" unchecked_image="unchecked_checkbox" text_style="left_text"/>
+		<control_style name="radio_style" checked_image="checked_radio" unchecked_image="unchecked_radio" text_style="left_text"/>
+		<control_style name="edit_style" margin="2,2,2,2" back_image="edit_bk" inset="2,2,2,2"/>
+		<control_style name="trackbar_style" back_image="trackbar_bk" thumb_image="trackbar_thumb"/>
+		<control_style name="image_frame" frame_type="use_image" left_border_image="border_left" right_border_image="border_right" top_border_image="border_top" bottom_border_image="border_bottom"/>
+		<control_style name="listitem_style" normal_icon="qq_small_icon" expand_icon="qq_big_icon" normal_height="30" expand_height="50" hover_frame="hover_list" select_frame="select_list"/>
+		<control_style name="listgroup_style" normal_icon="group_normal" expand_icon="group_expand" normal_height="30" expand_height="30" group="true" hover_frame="hover_group"/>
+		<control_style name="combobox_style" arrow_image="sb_bottom" back_image="edit_bk" margin="4,2,4,2"/>
+		<control_style name="text_com_item" normal_height="30" select_frame="select_list"/>
+		<control_style name="text_com_iconitem" normal_height="30" select_frame="select_list" normal_icon="qq_small_icon"/>
+		<control_style name="menu_style" separate_line="menu_sep" icon_width="30" arrow_width="20" arrow_image="menu_arrow" icon_frame="menu_icon_bk" menu_frame="comb_list_bk" text_style="left_text"/>
+		<control_style name="menu_style_xp" separate_line="menu_sep" icon_width="19" arrow_width="20" arrow_image="menu_arrow" icon_frame="menu_icon_bk_xp" menu_frame="comb_list_bk" text_style="left_text"/>
+		<control_style name="menu_style_blue" separate_line="menu_sep" icon_width="19" arrow_width="20" arrow_image="menu_arrow" icon_frame="menu_icon_bk_blue" menu_frame="comb_list_bk" text_style="left_text"/>
+	</control_style_set>
+	<menu_template>
+		<menu name="menu_file" control_style="menu_style">
+			<menu_item text="#New...\tCtrl+N" select_frame="select_list" tooltip="#new a file" menu_item_style="MF_STRING"/>
+			<menu_item menu_item_style="MF_SEPARATOR" height="4"/>
+			<menu_item text="#Open...\tCtrl+O" select_frame="select_list" icon="open" tooltip="#open a file from local" menu_item_style="MF_STRING"/>
+			<menu_item text="#Open URL.." select_frame="select_list" tooltip="#open a file from web" menu_item_style="MF_STRING"/>
+			<menu_item menu_item_style="MF_SEPARATOR" height="4"/>
+			<menu_item text="#Save...\tCtrl+O" select_frame="select_list" menu_item_style="MF_STRING"/>
+			<menu_item text="#Save as.." select_frame="select_list" menu_item_style="MF_STRING"/>
+			<menu_item menu_item_style="MF_SEPARATOR" height="4"/>
+			<menu_item text="#Encode..." select_frame="select_list" icon="open" menu_item_style="MF_STRING MF_GRAYED"/>
+			<menu_item text="#Decode..." select_frame="select_list" menu_item_style="MF_STRING MF_GRAYED"/>
+			<menu_item menu_item_style="MF_SEPARATOR" height="4"/>
+			<menu_item text="#&amp;Exit\tCtrl+Q" select_frame="select_list" menu_item_style="MF_STRING"/>
+		</menu>
+		<menu name="menu_click_me" control_style="menu_style_xp">
+			<menu_item text="#文档" select_frame="menu_item_style" menu_item_style="MF_STRING"/>
+			<menu_item text="#程序" select_frame="menu_item_style" menu_item_style="MF_STRING MF_POPUP">
+				<menu control_style="menu_style_blue">
+					<menu_item text="#附件" select_frame="menu_item_style" menu_item_style="MF_STRING MF_POPUP">
+						<menu control_style="menu_style_blue">
+							<menu_item text="#辅助工具" select_frame="menu_item_style" menu_item_style="MF_STRING"/>
+							<menu_item text="#系统工具" select_frame="menu_item_style" menu_item_style="MF_STRING MF_POPUP">
+								<menu control_style="menu_style_blue">
+									<menu_item text="#安全中心" select_frame="menu_item_style" menu_item_style="MF_STRING"/>
+									<menu_item text="#备份" select_frame="menu_item_style" menu_item_style="MF_STRING"/>
+									<menu_item text="#磁盘清理" select_frame="menu_item_style" menu_item_style="MF_STRING"/>
+									<menu_item text="#系统还原" select_frame="menu_item_style" menu_item_style="MF_STRING"/>
+									<menu_item text="#计划任务" select_frame="menu_item_style" menu_item_style="MF_STRING"/>
+								</menu>
+							</menu_item>
+							<menu_item text="#娱乐" select_frame="menu_item_style" menu_item_style="MF_STRING"/>
+							<menu_item text="#画图" select_frame="menu_item_style" menu_item_style="MF_STRING"/>
+							<menu_item text="#记事本" select_frame="menu_item_style" menu_item_style="MF_STRING"/>
+							<menu_item text="#计算器" select_frame="menu_item_style" menu_item_style="MF_STRING"/>
+						</menu>
+					</menu_item>
+					<menu_item text="#启动" select_frame="menu_item_style" menu_item_style="MF_STRING"/>
+					<menu_item text="#远程协助" select_frame="menu_item_style" menu_item_style="MF_STRING"/>
+					<menu_item text="#腾讯软件" select_frame="menu_item_style" menu_item_style="MF_STRING MF_POPUP">
+						<menu control_style="menu_style_blue">
+							<menu_item text="#QQ互动空间" select_frame="menu_item_style" menu_item_style="MF_STRING"/>
+							<menu_item text="#QQ游戏" select_frame="menu_item_style" menu_item_style="MF_STRING"/>
+							<menu_item text="#QQ聊天室" select_frame="menu_item_style" menu_item_style="MF_STRING"/>
+							<menu_item text="#QQ音乐" select_frame="menu_item_style" menu_item_style="MF_STRING"/>
+						</menu>
+					</menu_item>
+					<menu_item text="#网易邮箱" select_frame="menu_item_style" menu_item_style="MF_STRING"/>
+					<menu_item text="#暴风影音" select_frame="menu_item_style" menu_item_style="MF_STRING"/>
+				</menu>
+			</menu_item>
+			<menu_item text="#设置" select_frame="menu_item_style" menu_item_style="MF_STRING"/>
+			<menu_item text="#关机" select_frame="menu_item_style" menu_item_style="MF_STRING"/>
+			<menu_item text="#控制面板" select_frame="menu_item_style" menu_item_style="MF_STRING"/>
+			<menu_item text="#我的电脑" select_frame="menu_item_style" menu_item_style="MF_STRING"/>
+			<menu_item text="#网上邻居" select_frame="menu_item_style" menu_item_style="MF_STRING"/>
+			<menu_item text="#打印机" select_frame="menu_item_style" menu_item_style="MF_STRING"/>
+		</menu>
+	</menu_template>
+	<window_template>
+		<window name="main_wnd" frame_style="main_bk" min_size="600,600">
+			<horz_layout margin="10,10,20,20">
+				<frame_panel width="110" frame_type="use_color" border_color="#771111CC" border_rect="10,10,10,10">
+					<vert_tabbar notifier="tab_notifier" padding="2">
+						<tab_item control_style="def_tab_item" text="#button"/>
+						<tab_item control_style="def_tab_item" text="#label"/>
+						<tab_item control_style="def_tab_item" text="#trackbar"/>
+						<tab_item control_style="def_tab_item" text="#progressbar"/>
+						<tab_item control_style="def_tab_item" text="#split"/>
+						<tab_item control_style="def_tab_item" text="#tab"/>
+						<tab_item control_style="def_tab_item" text="#listbox"/>
+						<tab_item control_style="def_tab_item" text="#edit"/>
+						<tab_item control_style="def_tab_item" text="#combobox"/>
+						<tab_item control_style="def_tab_item" text="#menu"/>
+						<tab_item control_style="def_tab_item" text="#window"/>
+						<tab_item control_style="def_tab_item" text="#treeview"/>
+						<tab_item control_style="def_tab_item" text="#plugin"/>
+						<padding_panel/>
+					</vert_tabbar>
+				</frame_panel>]
+			<vert_layout padding="20">
+					<padding_panel height="60"/>
+					<tab_layout margin="10, 0, 0, 0" name="tab_notifier" height="300">
+						<dialog_layout>
+							<button control_style="def_button" button_style="left_icon" position="0,0,120,24" stretch="group"/>
+							<button control_style="def_button" button_style="right_icon" position="150,0,270,24" stretch="move_x"/>
+							<button control_style="def_button" button_style="center_icon" stretch="move_x" position="300,0,380,24"/>
+							<button control_style="def_button" button_style="top_icon" position="0,40,120,90" stretch="group"/>
+							<button control_style="def_button" button_style="bottom_icon" position="150,40,270,90" stretch="move_x"/>
+							<button control_style="def_button" button_style="center_icon no_text" stretch="move_x" position="300,40,380,90"/>
+							<check_box control_style="checkbox_style" position="0,120,150,150" stretch="group" text="#this is a checkbox1" tooltip="#click me1"/>
+							<check_box control_style="checkbox_style" position="0,160,150,190" stretch="group" text="#this is a checkbox2" tooltip="#click me2"/>
+							<radio_button name="radio1" control_style="radio_style" position="0,230,150,260" stretch="group" text="#this is a raido button 1" tooltip="#click me1"/>
+							<radio_button name="radio2" control_style="radio_style" position="170,230,320,260" stretch="group" text="#this is a raido button 2" tooltip="#click me2"/>
+						</dialog_layout>
+						<vert_layout>
+							<label text_style="multi_text" height="100" text="note"/>
+							<hyperlink text_style="link_text" height="30" text="#www.google.com" href="www.google.com"/>
+							<padding_panel/>
+						</vert_layout>
+						<dock_layout>
+							<horz_trackbar control_style="trackbar_style" dock_style="dock_top" height="19" range="0,1000" pos="100" step="10"/>
+							<vert_trackbar control_style="trackbar_style" dock_style="dock_left" thumb_image="trackbar_thumb1" width="10" range="0,1000" pos="100" step="10"/>
+						</dock_layout>
+						<dock_layout fill_last="true">
+							<horz_progressbar name="progressbar1" dock_style="dock_top" height="20" range="0,1000" pos="100" back_image="progressbar_bk"/>
+							<vert_progressbar name="progressbar2" dock_style="dock_left" width="15" range="0,1000" pos="100" back_image="progressbar_bk"/>
+							<dialog_layout>
+								<button name="start" control_style="def_button" stretch="group" position="100,50,170,80" text="#start" tooltip="#start prgoressing"/>
+							</dialog_layout>
+						</dock_layout>
+						<horz_split split_style="size_right" split_pos="200" split_min="150,100">
+							<canvas frame_style="canvas1">
+								<vert_split split_style="size_top" split_pos="200" split_min="50,100">
+									<canvas frame_style="canvas3"/>
+									<canvas frame_style="canvas4"/>
+								</vert_split>
+							</canvas>
+							<canvas frame_style="canvas2">
+								<tile_layout name="tile_layouQQ" margin="10,10,10,10" padding="5" tab_stop="true">
+									<picture_box icon="qq_big_icon" draw_mode="center_image"/>
+								</tile_layout>
+							</canvas>
+						</horz_split>
+						<dock_layout fill_last="true">
+							<horz_tabbar dock_style="dock_top" height="25" notifier="color_tab">
+								<tab_item control_style="def_tab_item" width="60" text="#blue"/>
+								<tab_item control_style="def_tab_item" width="60" text="#red"/>
+								<tab_item control_style="def_tab_item" width="60" text="#green"/>
+								<tab_item control_style="def_tab_item" width="60" text="#black"/>
+								<tab_item control_style="def_tab_item" width="60" text="#white"/>
+								<padding_panel/>
+							</horz_tabbar>
+							<tab_layout name="color_tab">
+								<canvas frame_style="canvas_blue"/>
+								<canvas frame_style="canvas_red"/>
+								<canvas frame_style="canvas_green"/>
+								<canvas frame_style="canvas_black"/>
+								<canvas frame_style="canvas_white"/>
+							</tab_layout>
+						</dock_layout>
+						<dialog_layout>
+							<frame_panel control_style="image_frame" position="0,0,200,300" stretch="group size_y">
+								<listbox text_style="big_text" hover_expand="true">
+									<list_icontext_item control_style="listitem_style" text="#listbox item1"/>
+									<list_icontext_item control_style="listitem_style" text="#listbox item2"/>
+									<list_icontext_item control_style="listitem_style" text="#hello world"/>
+									<list_icontext_item control_style="listitem_style" text="#你好,世界"/>
+									<list_icontext_item control_style="listitem_style" text="#Main"/>
+									<list_icontext_item control_style="listitem_style" text="#Function"/>
+								</listbox>
+							</frame_panel>
+							<frame_panel control_style="image_frame" position="230,0,300,250" stretch="size_x">
+								<listbox name="test_list" text_style="big_text" select_expand="true">
+									<list_icontext_item control_style="listgroup_style" text="#我的好友"/>
+									<list_icontext_item control_style="listitem_style" text="#飘零浪人"/>
+									<list_icontext_item control_style="listitem_style" text="#小鱼儿"/>
+									<list_icontext_item control_style="listgroup_style" text="#陌生人"/>
+									<list_icontext_item control_style="listitem_style" text="#白展堂A"/>
+									<list_icontext_item control_style="listitem_style" text="#白展堂B"/>
+									<list_icontext_item control_style="listgroup_style" text="#黑名单"/>
+									<list_icontext_item control_style="listitem_style" text="#李大嘴A"/>
+									<list_icontext_item control_style="listitem_style" text="#李大嘴B"/>
+								</listbox>
+							</frame_panel>
+							<button name="add_listitem" control_style="def_button" text="#Add" position="230,260,300,290" tooltip="#add 1000 item" stretch="move_x"/>
+						</dialog_layout>
+						<dialog_layout>
+							<label text_style="center_text" text="#name:" position="0,0,60,22" stretch="group"/>
+							<richedit control_style="edit_style" text_style="multi_text" scrollbar_style=" ES_AUTOHSCROLL" multiline="false" limit_text="32" position="60,0,160,22" stretch="move_x size_x" context_menu="true"/>
+							<label text_style="center_text" text="#password:" position="0,30,60,52" stretch="group"/>
+							<richedit control_style="edit_style" text_style="multi_text" scrollbar_style=" ES_AUTOHSCROLL" multiline="false" limit_text="32" password="true" position="60,30,160,52" stretch="move_x size_x"/>
+						</dialog_layout>
+						<dialog_layout>
+							<combobox text_style="big_text" control_style="combobox_style" position="0,0,200,30" stretch="group" combobox_style="droplist" list_height="300">
+								<list_icontext_item control_style="text_com_item" text="#combobox item1"/>
+								<list_icontext_item control_style="text_com_item" text="#combobox item2"/>
+								<list_icontext_item control_style="text_com_item" text="#combobox item3"/>
+								<list_icontext_item control_style="text_com_item" text="#combobox item4"/>
+							</combobox>
+							<combobox text_style="big_text" list_frame="comb_list_bk" control_style="combobox_style" position="0,50,200,80" stretch="group" combobox_style="droplist" list_height="100">
+								<list_icontext_item control_style="text_com_iconitem" text="#combobox item1"/>
+								<list_icontext_item control_style="text_com_iconitem" text="#combobox item2"/>
+								<list_icontext_item control_style="text_com_iconitem" text="#combobox item3"/>
+								<list_icontext_item control_style="text_com_iconitem" text="#combobox item4"/>
+								<list_icontext_item control_style="text_com_iconitem" text="#combobox item5"/>
+								<list_icontext_item control_style="text_com_iconitem" text="#combobox item6"/>
+								<list_icontext_item control_style="text_com_iconitem" text="#combobox item7"/>
+								<list_icontext_item control_style="text_com_iconitem" text="#combobox item8"/>
+								<list_icontext_item control_style="text_com_iconitem" text="#combobox item9"/>
+								<list_icontext_item control_style="text_com_iconitem" text="#combobox item10"/>
+							</combobox>
+							<combobox text_style="big_text" list_frame="comb_list_bk1" control_style="combobox_style" position="0,100,200,125" stretch="group" combobox_style="dropdown" list_height="200">
+								<list_icontext_item control_style="text_com_iconitem" text="#combobox item1"/>
+								<list_icontext_item control_style="text_com_iconitem" text="#combobox item2"/>
+								<list_icontext_item control_style="text_com_iconitem" text="#combobox item3"/>
+								<list_icontext_item control_style="text_com_iconitem" text="#combobox item4"/>
+								<list_icontext_item control_style="text_com_iconitem" text="#combobox item5"/>
+								<list_icontext_item control_style="text_com_iconitem" text="#combobox item6"/>
+								<list_icontext_item control_style="text_com_iconitem" text="#combobox item7"/>
+								<list_icontext_item control_style="text_com_iconitem" text="#combobox item8"/>
+								<list_icontext_item control_style="text_com_iconitem" text="#combobox item9"/>
+								<list_icontext_item control_style="text_com_iconitem" text="#combobox item10"/>
+							</combobox>
+						</dialog_layout>
+						<dock_layout>
+							<horz_toolbar dock_style="dock_top" height="50" margin="5,10,5,10" padding="50">
+								<button name="file_button" control_style="def_button" button_style="right_icon" icon="group_expand" width="70" text="#File"/>
+								<button name="click_me_button" control_style="def_button" button_style="right_icon" icon="group_expand" width="100" text="#click me"/>
+								<padding_panel/>
+							</horz_toolbar>
+						</dock_layout>
+						<dialog_layout>
+							<button name="test_popup" control_style="def_button" text="#test" stretch="group" position="0,0,70,30"/>
+						</dialog_layout>
+						<dialog_layout>
+							<frame_panel control_style="image_frame" position="100,0,300,250" stretch="size_x">
+								<treeview name="test_treeview">
+									<treeview_item name="test tree" control_style="def_button" text="#TreeView Item"/>
+								</treeview>
+							</frame_panel>
+							<button name="add_treeitem" control_style="def_button" text="#Add TreeItem" position="100,260,300,290" tooltip="#add 1000 tree item" stretch="move_x"/>
+						</dialog_layout>
+            <!--
+            <dock_layout>
+							<horz_toolbar dock_style="dock_top" height="50" margin="5,10,5,10" padding="50">
+								<fade_button width="150" back_image="fade_btn_bk"/>
+								<fade_button width="100" back_image="fade_btn_bk"/>
+								<padding_panel/>
+							</horz_toolbar>
+						</dock_layout>-->
+					</tab_layout>
+					<richedit name="control_event_edit" control_style="edit_style" text_style="multi_text" read_only="false" scrollbar_style=" ES_AUTOHSCROLL ES_AUTOVSCROLL WS_HSCROLL WS_VSCROLL" multiline="true" tooltip="#control events" rich="true"/>
+				</vert_layout>
+			</horz_layout>
+		</window>
+		<window name="popup_win" nc_style="custom_nc region_nc size_nc" caption_height="30" client_margin="2,2,2,2" max_size="610,800" min_size="300,300">
+			<vert_layout>
+				<horz_layout height="22" padding="2">
+					<picture_box icon="qq_small_icon" draw_mode="center_image"/>
+					<label text="#test window" width="100" text_style="big_text"/>
+					<padding_panel/>
+					<button name="dui_sys_min_btn" tab_stop="false" button_style="auto_fit center_icon" back_image="min_btn" tooltip="#最小化"/>
+					<button name="dui_sys_max_btn" tab_stop="false" button_style="auto_fit center_icon" back_image="max_btn" tooltip="#最大化"/>
+					<button name="dui_sys_restore_btn" tab_stop="false" button_style="auto_fit center_icon" back_image="restore_btn" tooltip="#还原"/>
+					<button name="dui_sys_close_btn" tab_stop="false" button_style="auto_fit center_icon" back_image="close_btn" tooltip="#关闭"/>
+				</horz_layout>
+				<dialog_layout>
+					<button name="change_skin" control_style="def_button" text="#skin" tooltip="#change skin" stretch="group" position="100,100,170,130"/>
+				</dialog_layout>
+			</vert_layout>
+		</window>
+	</window_template>
+</dui_template>

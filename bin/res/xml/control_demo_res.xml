@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dui_resource>
+	<color_set>
+		<color name="blue" value="#FF0000FF"/>
+		<color name="red" value="#FFFF0000"/>
+		<color name="green" value="#FF00FF00"/>
+		<color name="black" value="#FF000000"/>
+		<color name="white" value="#FFFFFFFF"/>
+		<color name="alpha_blue" value="#770000FF"/>
+		<color name="mask" value="#FFFF00FF"/>
+	</color_set>
+	<cursor_set/>
+	<font_set>
+		<font name="font_normal" italic="false" underline="false" facename="ids_fontname" height="-12" weight="400" strikeout="false"/>
+		<font name="font_bold" italic="false" underline="false" facename="#tahoma" height="-12" weight="700" strikeout="false"/>
+		<font name="font_big" italic="true" underline="false" facename="#tahoma" height="-15" weight="800" strikeout="false"/>
+	</font_set>
+	<image_set>
+		<image name="sb_bottom" config_type="file" file_name="./res/image/scroll_bottom.bmp" count="6"/>
+		<image name="sb_top" config_type="file" file_name="./res/image/scroll_top.bmp" count="6"/>
+		<image name="sb_thumb" config_type="file" file_name="./res/image/scroll_thum.bmp" count="3"/>
+		<image name="qq_bk" config_type="file" file_name="res/image/qq_bk.bmp" count="1"/>
+		<image name="btn_bk" config_type="file" file_name="res/image/btnBack.bmp" count="6" mask_color="mask"/>
+		<image name="face" config_type="file" file_name="res/image/icon_face.png" count="1" alpha="200"/>
+		<image name="checked_checkbox" config_type="file" file_name="res/image/checked_checkbox.bmp" count="6"/>
+		<image name="unchecked_checkbox" config_type="file" file_name="res/image/unchecked_checkbox.bmp" count="6"/>
+		<image name="checked_radio" config_type="file" file_name="res/image/checked_radio.bmp" count="6" mask_color="mask"/>
+		<image name="unchecked_radio" config_type="file" file_name="res/image/unchecked_radio.bmp" count="6" mask_color="mask"/>
+		<image name="edit_bk" config_type="file" file_name="./res/image/edit_bk.bmp" count="4"/>
+		<image name="trackbar_bk" config_type="file" file_name="./res/image/track_bk.PNG" count="2" mask_color="mask"/>
+		<image name="trackbar_thumb" config_type="file" file_name="./res/image/track_thumb1.PNG" count="3" mask_color="mask"/>
+		<image name="trackbar_thumb1" config_type="file" file_name="./res/image/track_thumb.png" count="1" mask_color="mask"/>
+		<image name="progressbar_bk" config_type="file" file_name="./res/image/progress_back.PNG" count="2" mask_color="mask"/>
+		<image name="qq_big_icon" config_type="file" file_name="./res/image/big_icon.PNG" count="1"/>
+		<image name="qq_small_icon" config_type="file" file_name="./res/image/small_icon.PNG" count="1"/>
+		<image name="border_top" config_type="file" file_name="./res/image/border_top.bmp" count="2" mask_color="mask"/>
+		<image name="border_bottom" config_type="file" file_name="./res/image/border_bot.bmp" count="2" mask_color="mask"/>
+		<image name="border_left" config_type="file" file_name="./res/image/border_left.bmp" count="2" mask_color="mask"/>
+		<image name="border_right" config_type="file" file_name="./res/image/border_right.bmp" count="2" mask_color="mask"/>
+		<image name="group_normal" config_type="file" file_name="./res/image/group_normal.bmp" count="1" mask_color="mask"/>
+		<image name="group_expand" config_type="file" file_name="./res/image/group_expand.bmp" count="1" mask_color="mask"/>
+		<image name="fit" config_type="file" file_name="./res/image/fit.bmp" count="1" mask_color="mask"/>
+		<image name="menu_sep" config_type="file" file_name="./res/image/menu_sep.bmp" count="1" mask_color="mask"/>
+		<image name="menu_arrow" config_type="file" file_name="./res/image/menu_arrow.bmp" count="4" mask_color="mask"/>
+		<image name="open" config_type="file" file_name="./res/image/file_open.bmp" count="4" mask_color="mask"/>
+		<image name="xp_logo" config_type="file" file_name="./res/image/xp_logo.bmp" count="1" alpha="200"/>
+		<image name="close_btn" config_type="file" file_name="./res/image/btn_sys_close.png" count="3"/>
+		<image name="min_btn" config_type="file" file_name="./res/image/btn_sys_minimize.png" count="6"/>
+		<image name="max_btn" config_type="file" file_name="./res/image/btn_sys_maximize.png" count="6"/>
+		<image name="restore_btn" config_type="file" file_name="./res/image/btn_sys_restore.png" count="6"/>
+		<image name="skin1_bk" config_type="file" file_name="./res/image/bg0.png" count="1"/>
+		<image name="skin2_bk" config_type="file" file_name="./res/image/bg1.png" count="1"/>
+		<image name="fade_btn_bk" config_type="file" file_name="res/image/fade_btn_bk.png" count="6" />
+	</image_set>
+</dui_resource>

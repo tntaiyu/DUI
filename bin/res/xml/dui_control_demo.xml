@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dui_main>
+	<language_set default="english">
+		<language name="english" config_type="file" file_name="./res/xml/control_demo_string.xml"/>
+	</language_set>
+	<skin_set>
+		<skin name="blue" config_type="file" file_name="./res/xml/control_demo_res.xml"/>
+	</skin_set>
+	<template_set>
+		<template name="template" config_type="file" file_name="./res/xml/control_demo_win.xml"/>
+	</template_set>
+</dui_main>

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DUILib", "duisrc\DUILib.vcproj", "{2DF0FEB8-121A-44A2-9B4B-F923F6F4D788}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DUILibStatic", "duisrc\DUILibStatic.vcproj", "{32847D83-49E4-45AB-BC13-CEC3F5CC8561}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ControlDemo", "ControlDemo\ControlDemo.vcproj", "{E1A19500-0CF5-4CB9-814A-F3BD20747EDE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{32847D83-49E4-45AB-BC13-CEC3F5CC8561} = {32847D83-49E4-45AB-BC13-CEC3F5CC8561}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2DF0FEB8-121A-44A2-9B4B-F923F6F4D788}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2DF0FEB8-121A-44A2-9B4B-F923F6F4D788}.Release|Win32.ActiveCfg = Release|Win32
+		{2DF0FEB8-121A-44A2-9B4B-F923F6F4D788}.Release|Win32.Build.0 = Release|Win32
+		{32847D83-49E4-45AB-BC13-CEC3F5CC8561}.Debug|Win32.ActiveCfg = Debug|Win32
+		{32847D83-49E4-45AB-BC13-CEC3F5CC8561}.Debug|Win32.Build.0 = Debug|Win32
+		{32847D83-49E4-45AB-BC13-CEC3F5CC8561}.Release|Win32.ActiveCfg = Release|Win32
+		{32847D83-49E4-45AB-BC13-CEC3F5CC8561}.Release|Win32.Build.0 = Release|Win32
+		{E1A19500-0CF5-4CB9-814A-F3BD20747EDE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E1A19500-0CF5-4CB9-814A-F3BD20747EDE}.Debug|Win32.Build.0 = Debug|Win32
+		{E1A19500-0CF5-4CB9-814A-F3BD20747EDE}.Release|Win32.ActiveCfg = Release|Win32
+		{E1A19500-0CF5-4CB9-814A-F3BD20747EDE}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

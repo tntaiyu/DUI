@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dui_language>
+	<string id="ids_title">Control Demo</string>
+	<string id="ids_fontname">宋体</string>
+	<string id="ids_button">test button</string>
+	<string id="note">The DrawText function uses the device context's selected font, text color, and background color to draw the text. Unless the DT_NOCLIP format is used, DrawText clips the text so that it does not appear outside the specified rectangle.</string>
+</dui_language>

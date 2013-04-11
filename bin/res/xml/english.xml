@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dui_language>
+	<string id="ids_fontname">宋体</string>
+	<string id="ids_english">English</string>
+	<string id="ids_chinese">Chinese</string>
+	<string id="ids_ok">OK(&amp;O)</string>
+	<string id="ids_cancel">Cancel(&amp;C)</string>
+	<string id="ids_apply">Apply</string>
+	<string id="ids_skin1">Skin1</string>
+	<string id="ids_skin2">Skin2</string>
+	<string id="ids_skin2">Skin2</string>
+	<string id="ids_rem">remember my settings</string>
+	<string id="ids_select">select you folder save path:</string>
+	<string id="ids_settingpath">save to setting path</string>
+	<string id="ids_filepath">save to my document</string>
+	<string id="ids_undefine">user define</string>
+	<string id="ids_browser">Browser...</string>
+	<string id="ids_clear">You can clear you file, image and so on, so you can get more volum space</string>
+	<string id="ids_clearFolder">Clear my document...</string>
+	<string id="ids_myInfo">My Information:</string>
+</dui_language>

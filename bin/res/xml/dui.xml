@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dui_main>
+	<language_set default="english">
+		<language name="english" config_type="file" file_name="./res/xml/english.xml"/>
+		<language name="中文" config_type="dll" file_name="b.dll" resource_id="206" resource_type="dui_config"/>
+		<language name="abc" config_type="exe" resource_id="201" resource_type="XML_CONFIG"/>
+	</language_set>
+	<skin_set>
+		<skin name="blue" config_type="file" file_name="./res/xml/resource.xml"/>
+	</skin_set>
+	<template_set>
+		<template name="template" config_type="file" file_name="./res/xml/window.xml"/>
+	</template_set>
+</dui_main>

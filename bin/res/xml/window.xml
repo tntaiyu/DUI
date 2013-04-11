@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<dui_template>
+	<text_style_set>
+		<text_style default="true" name="normal" font="font_normal" normal_color="black" select_color="white" disable_color="#FF333333" hover_color="black" format="DT_LEFT DT_SINGLELINE DT_END_ELLIPSIS DT_VCENTER"/>
+		<text_style name="link" font="font_link" normal_color="blue" disable_color="blue" format="DT_LEFT DT_WORDBREAK"/>
+	</text_style_set>
+	<frame_style_set>
+		<frame_style name="test_frame" border_color="#FF333333" border_rect="5,5,5,5" back_color="white,blue,red" border_round="2,2" back_image="baby" back_sep="100" back_vertical="true"/>
+		<frame_style name="menu_icon_bk" back_color="#FF336688"/>
+		<frame_style name="menu_bk" back_color="#FFb6d4eb,#FFDDDDDD" border_color="blue" border_rect="1,1,1,1"/>
+		<frame_style name="hover_listitem" border_color="red" border_rect="2,2,2,2" back_color="#88888888" border_round="2,2" back_sep="100" back_vertical="false"/>
+		<frame_style name="select_listitem" border_color="red" border_rect="1,1,1,1" back_color="#EEEEEEEE,#EE000000,#EEFF00FF" border_round="5,5" back_sep="0.6" back_vertical="true"/>
+	<frame_style name="canvas_frame" back_color="#FFb6d4eb,#FFDDDDDD" back_image="QQ_ICON" back_image_pos="center"/>
+	</frame_style_set>
+	<control_style_set>
+		<control_style name="check_box" checked_image="checkbox_checked" unchecked_image="checkbox_unchecked"/>
+		<control_style name="radio_button" checked_image="radio_checked" unchecked_image="radio_unchecked"/>
+		<control_style name="vert_scrollbar" arrow_image1="sb_top" arrow_image2="sb_bottom" thumb_image="sb_thumb" back_color="alpha_blue"/>
+		<control_style name="horz_scrollbar" arrow_image1="sb_top" arrow_image2="sb_bottom" thumb_image="sb_thumb" back_color="alpha_blue"/>
+		<control_style name="richedit" margin="2,2,2,2" back_image="edit_bk" inset="2,2,2,2"/>
+		<control_style name="combobox" arrow_image="sb_bottom" margin="2,2,2,2" back_image="edit_bk"/>
+		<control_style name="cmbitem" padding="5" select_frame="select_listitem"/>
+		<control_style name="menu_default" separate_line="menu_sep" icon_width="30" arrow_width="20" arrow_image="menu_arrow" icon_frame="menu_icon_bk" menu_frame="menu_bk"/>
+	</control_style_set>
+	<menu_template>
+		<menu name="menu1" control_style="menu_default">
+			<menu_item text="#menu_item1" select_frame="select_listitem" tooltip="#abc" menu_item_style="MF_STRING"/>
+			<menu_item text="#menu_item1" select_frame="select_listitem" tooltip="#haha" menu_item_style="MF_STRING MF_GRAYED"/>
+			<menu_item menu_item_style="MF_SEPARATOR" height="4"/>
+			<menu_item text="#menu_item, hello world \t Alt+A" select_frame="select_listitem" menu_item_style="MF_STRING MF_POPUP">
+				<menu control_style="menu_default">
+					<menu_item text="#sub_menu_item1(&amp;D)" select_frame="select_listitem" menu_item_style="MF_STRING"/>
+					<menu_item text="#sub_menu_item2" select_frame="select_listitem" menu_item_style="MF_STRING MF_POPUP">
+						<menu control_style="menu_default">
+							<menu_item text="#sub_menu_item111" select_frame="select_listitem" menu_item_style="MF_STRING"/>
+							<menu_item text="#sub_menu_item222" select_frame="select_listitem" menu_item_style="MF_STRING"/>
+							<menu_item text="#sub_menu_item333" select_frame="select_listitem" menu_item_style="MF_STRING"/>
+						</menu>
+					</menu_item>
+				</menu>
+			</menu_item>
+			<menu_item text="#menu_item3\t Ctrl+C" select_frame="select_listitem" menu_item_style="MF_STRING" icon="radio_checked"/>
+		</menu>
+	</menu_template>
+	<window_template>
+		<window name="test control">
+			<canvas frame_style="canvas_frame">
+				<vert_layout>
+					<horz_layout height="30" padding="20">
+						<button button_style="left_icon" icon="close" back_image="btn_back" margin="5, 5, 5, 5" text="#你好" tooltip="#哈哈" padding="10"/>
+						<button button_style="left_icon" shortcut="a" icon="close" back_image="btn_back" margin="5, 5, 5, 5" text="#hello" tooltip="#大家好" padding="10"/>
+						<button button_style="left_icon" icon="close" back_image="btn_back" margin="5, 5, 5, 5" text="#hello" tooltip="#大家好" padding="10"/>
+						<padding_panel/>
+					</horz_layout>
+				</vert_layout>
+			</canvas>
+		</window>
+		<window name="win1" nc_style="custom_nc region_nc size_nc" frame_style="test_frame" client_margin="20,20,20,20">
+			<dock_layout fill_last="true" name="abcdef">
+				<horz_layout>
+					<vert_progressbar back_image="progress_bk" name="my_pb" range="10, 100" pos="50"/>
+					<vert_trackbar back_image="track_bk" thumb_image="track_thumb" range="100, 10000" pos="200"/>
+					<frame_panel frame_rect="5, 10, 20, 30" margin="20, 20, 20, 20" draw_mode="use_image" back_color="blue" left_border_image="left_border" right_border_image="right_border" top_border_image="top_border" bottom_border_image="bottom_border">
+						<listbox name="myListbox" select_expand="true" hover_expand="false">
+							<list_icontext_item text="#Hello World" normal_icon="normal_icon" expand_icon="expand_icon" normal_height="30" expand_height="60" hover_frame="hover_listitem" select_frame="select_listitem"/>
+							<list_icontext_item text="#飘零浪人" group="true" expand="true" normal_icon="normal_icon" expand_icon="expand_icon" normal_height="30" expand_height="60" hover_frame="hover_listitem" select_frame="select_listitem"/>
+							<list_icontext_item text="#一个好人" normal_icon="normal_icon" expand_icon="expand_icon" normal_height="30" expand_height="60" hover_frame="hover_listitem" select_frame="select_listitem"/>
+						</listbox>
+					</frame_panel>
+					<canvas width="5"  frame_style="canvas_frame"/>
+					<vert_layout enable_scroll="true">
+						<canvas name="canvas_main" height="300" width="300"  frame_style="canvas_frame">
+							<dialog_layout name="manager" padding="15">
+								<button position="10, 10, 100, 50" name="my_button" stretch="group size_x" margin="5, 5, 5, 5" text="#你好aabc" padding="5" tooltip="#阿波才" button_style="right_icon" icon="close" back_image="btn_back"/>
+								<radio_button control_style="radio_button" width="100" position="120, 10, 180, 50" stretch="move_x size_x" text="#选项" tooltip="#请选择"/>
+								<check_box control_style="check_box" width="100" position="10, 60, 180,100" stretch="group" text="#选项" tooltip="#请选择"/>
+								<label text_style="normal" text="#hello world!" position="200,60,250,100" stretch="size_x"/>
+								<hyperlink href="www.baidu.com" text="#baidu.com" position="300, 60, 500, 100" stretch="move_x"/>
+							</dialog_layout>
+						</canvas>
+						<win_object height="30" name="win_obj" tab_stop="true" text="#hello world"/>
+						<richedit control_style="richedit" name="edit11" read_only="false" height="300" text="#test" scrollbar_style=" ES_AUTOHSCROLL ES_AUTOVSCROLL WS_HSCROLL WS_VSCROLL" multiline="true" password="false" tooltip="#test" rich="true" context_menu="true"/>
+						<horz_trackbar back_image="track_bk" thumb_image="track_thumb1" range="100, 10000" id="100" pos="200" step="500" margin="20, 0, 20, 0"/>
+						<combobox control_style="combobox" height="25" text="#text item" combobox_style="dropdown" list_height="100">
+							<list_icontext_item text="#Hello World" select_frame="select_listitem" padding="20"/>
+							<list_icontext_item text="#飘零浪人" control_style="cmbitem"/>
+							<list_icontext_item text="#一个好人a" control_style="cmbitem"/>
+							<list_icontext_item text="#一个好人b" control_style="cmbitem"/>
+							<list_icontext_item text="#一个好人c!!!" control_style="cmbitem"/>
+							<list_icontext_item text="#一个好人d" control_style="cmbitem"/>
+							<list_icontext_item text="#一个好人effabcdd!!!" control_style="cmbitem"/>
+						</combobox>
+						<padding_panel height="50"/>
+					</vert_layout>
+				</horz_layout>
+			</dock_layout>
+		</window>
+		<window name="test1" frame_style="test_frame" nc_style="custom_nc region_nc size_nc">
+			<vert_layout>
+				<horz_layout height="21" padding="2">
+					<padding_panel/>
+					<button name="dui_sys_min_btn" tab_stop="false" button_style="auto_fit center_icon" back_image="min_btn" tooltip="#最小化"/>
+					<button name="dui_sys_max_btn" tab_stop="false" button_style="auto_fit center_icon" back_image="max_btn" tooltip="#最大化"/>
+					<button name="dui_sys_restore_btn" tab_stop="false" button_style="auto_fit center_icon" back_image="restore_btn" tooltip="#还原"/>
+					<button name="dui_sys_close_btn" tab_stop="false" button_style="auto_fit center_icon" back_image="close_btn" tooltip="#关闭"/>
+				</horz_layout>
+				<horz_layout height="30">
+					<horz_tabbar notifier="tab_owner" select_index="0">
+						<tab_item button_style="left_icon  auto_fit" icon="close" back_image="btn_back" text="#tab1" margin="5, 5, 5, 5"/>
+						<tab_item button_style="left_icon  auto_fit" icon="close" back_image="btn_back" text="#tab2" margin="5, 5, 5, 5"/>
+						<tab_item button_style="left_icon  auto_fit" icon="close" back_image="btn_back" text="#tab3" margin="5, 5, 5, 5"/>
+						<padding_panel/>
+					</horz_tabbar>
+				</horz_layout>
+				<horz_layout height="80">
+					<tab_layout name="tab_owner">
+						<canvas  frame_style="canvas_frame"/>
+						<canvas  frame_style="canvas_frame"/>
+						<canvas  frame_style="canvas_frame"/>
+					</tab_layout>
+				</horz_layout>
+				<padding_panel/>
+			</vert_layout>
+		</window>
+	</window_template>
+</dui_template>
